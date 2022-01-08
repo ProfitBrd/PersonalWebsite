@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root{
+	--mainColor: #1C2833;
+	--secondaryColor: #464c99;
+	--offWhite: #edf0f1;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/*Offsets navigation bar when jumping to a point*/
+.jumpPoint {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+.jumpPoint #jumpToEducation{
+    top: -25px;
+}
+.jumpPoint #jumpToProjects{
+    top: -25px;
+}
+
+
+/*NAVIGATION BAR*/
+header li, header a, #nameOnHeader{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #edf0f1;
+	text-decoration : none;
+}
+
+header{
+	position:fixed;
+	width: 100%;
+	display : flex;
+	background-color: var(--secondaryColor);
+	justify-content: flex-end;
+	align-items: center;
+	padding-right:0px;
+	
+}
+#nameOnHeader{
+	margin-right:auto; /*uses all avaliable space on the right hand side*/
+	padding-left: 20px;
+	font-size:30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#navitems{
+	display:flex;
+	list-style:none;
+	padding-right:30px;
+}
+#navitems li{
+	display: block;
+	margin:10px 30px;
+}
+#navitems li a{
+	transition: all 0.25s ease 0s;
+}
+#navitems li a:hover{
+	color: #30A412;
+	
+}
+
+
+/*TITLE SCREEN*/
+.introduction{
+	display:block;
+	block-size:fit-content;
+	block-size: 950px;
+	margin:0px;
+	background-image: url("city2.jpg");
+	background-position: 0px 0px;
+	background-size:cover;
+	background-color: black;
+	
+	background-repeat: no-repeat;/*static background image*/
+	background-attachment:fixed;
+}
+
+#introductionWords{
+	padding-top:150px;
+	background-color: transparent;
+	display:block;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	text-align:center;
+	color: white;
+	text-shadow: 1px 0px #30A412, -1px 0px #30A412, 0px 1px #30A412, 0px -1px #30A412;/*outline*/
+}
+#introductionWords h1{
+	font-size: 50px;
+}
+#introductionWords h2{
+	font-size: 30px;
+}
+#icons{ /* FIX - download the actual file later to put on local machine  LINE-HEIGHT to get background?*/
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	background-color: transparent;
+	color: #30A412 ;
+}
+#icons .fab{
+	margin-right: 30px;
+	margin-left: 30px;
+	text-shadow: 1px 0px white, -1px 0px white, 0px 1px white, 0px -1px white;/*outline*/
+}
+#icons .fas{
+	margin-right: 30px;
+	margin-left: 30px;
+	padding:4px;
+	text-shadow: 1px 0px white, -1px 0px white, 0px 1px white, 0px -1px white;/*outline*/
+}
+
+/*ABOUT ME */
+#aboutMe{
+	display:grid;
+	grid-template-rows: minmax(450px, max-content);
+	grid-template-columns: 400px 1fr;
+	grid-gap: 0px 20px;
+	block-size:fit-content; /*FIX -- text not fitting in a grid when screen gets VERY small, need to give the grid a background*/
+	margin:0px;
+	background-color: var(--secondaryColor);/*#685D62;*/
+	padding-top:2%;
+	padding-right: 50px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	text-align:center;
+	color: #edf0f1;
+	
+	
+}
+#aboutMePicture{
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 1;
+}
+#aboutMeText{
+	grid-row: 1 / span 1;
+	grid-column: 2 / span 1;
+}
+@media(max-width:1100px){ /*below certain width, make transform grid elements into a 2x1 grid*/
+	#aboutMe{
+		grid-template-rows: minmax(450px, max-content) minmax(250px, max-content);
+		grid-template-columns: 1fr;
+	}
+	#aboutMePicture{
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 1;
+	}
+	#aboutMeText{
+	grid-row: 2 / span 1;
+	grid-column: 1 / span 1;
+	}
+}
+
+/* Grid:
+	X	X
+	X	X
+	X 	X
+*/
+/* EDUCATION */
+.education{
+	display:grid;
+	grid-template-rows: 70px minmax(150px, max-content);
+	grid-template-columns: 300px 1fr;
+	grid-gap: 0px 3px;
+	background-color: var(--offWhite);
+	padding-top:1%;
+	padding-right: 4px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	text-align:center;
+	color: black;
+	
+}
+.education h1{
+	grid-row: 1/span 1;
+	grid-column: 1/span 1;
+	font-size: 40px;
+}
+#AMlogo{
+	grid-row: 2 span 2;
+	grid-column: 1/span 1;
+	margin: auto;
+	padding-bottom:20%;
+}
+#educationText{
+	text-align: start;
+}
+#educationHeader{
+	align-content: left;
+	grid-row: 2 span 1;
+	grid-column: 2/span 1;
+	padding-bottom: 20px;
+}
+#educationText{
+	font-size: 22px;
+	grid-row: 2/span 1;
+	grid-column: 2/span 1;
+}
+	
+
+
+
+
+
+/* Grid:
+	Block
+	X X
+*/
+/* PROJECTS */
+#projects{
+	display:block;
+	margin:0px;
+	background-color: var(--offWhite);
+	padding-top:1%;
+	padding-right: 4px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	color: black;
+}
+#projects h1{
+	font-size: 40px;
+	padding-left: 45px;
+}
+
+.card{
+	display: grid;
+	grid-template-rows: minmax(150px, max-content);
+	grid-template-columns: 300px 1fr;
+	grid-gap: 0px 3px;
+	background-color: var(--offWhite);
+	padding-top:1%;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	color: black;
+}
+.card .cardLogo{
+	margin: auto;
+}
+.card .cardText{
+	text-align:start;	
+}
+.card .cardText h2{
+	padding-bottom: 20px;
+	font-size: 30px;
+}
+.card .cardText p{
+	font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.basicBlock{
+	display:flex;
+	block-size:fit-content;
+	block-size: 900px;
+	margin:0px;
+	background-color: #685D62;
+	padding-top:1%;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	text-align:center;
+	color: #edf0f1;
+}
+#aboutMePicture{
+	margin-left: 5%;
+}
+#aboutMeText{
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+	margin: 0px;
+	padding: 0px;
+}
+#aboutMeText h1{
+	color: #30A412;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 40px;
+}
+#aboutMeText p{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	font-size: 20px;
+}
+*/
+
+
+
+
+
+
+
+
+/*
+#navbar{
+	background-color: grey;
+	color: #fff;
+	display:flex;
+	
+}
+#navbar ul{
+	padding:0;
+	list-style:none;
+	
+	
+	
+}
+#navbar li{
+	display: inline;
+	
+	
+}
+#navbar a{
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	
+}
+*/

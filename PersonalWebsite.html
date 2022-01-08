@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My Website</title>
+	<!-- Font Awesome Icons -->
+	<script src="https://kit.fontawesome.com/7b27c3a963.js" crossorigin="anonymous"></script>
+	<!-- Custom CSS -->
+	<link rel = "stylesheet" type = "text/css" href = "PersonalStyle.css"/>
+</head>
+<body>
+	
+	<header>
+		<p id = "nameOnHeader">Alex De Young</p>
+		<nav>
+			<ul id = "navitems">
+				<li><a href = "#jumpToAboutMe"> About Me </a></li> <!-- FIXME -->
+				<li><a href = "#jumpToEducation" > Education </a></li>
+				<li><a href = "#jumpToProjects" > Projects </a></li>
+				<li><a href = "#" > Skills </a></li>
+				<li><a href = "#" > Misc </a></li>
+				<li><a href = "#" > Contact </a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section class = "introduction">
+			<div id = "introductionWords">
+				<h1>Hello,<br/></h1>
+				<h2>my name is Alex De Young,<br/> and this is my website</h2><!-- No Break Space -->
+			</div>
+			<div id = "icons">
+				<i class="fab fa-github-square fa-2x"></i> <!-- Only use 'fab' and 'fas' with font awesome, nothing else works -->
+				<i class="fab fa-linkedin fa-2x"></i>
+				<i class="fas fa-envelope fa-2x"></i>
+			</div>
+		</section>
+		
+		<a class="jumpPoint" id="jumpToAboutMe"></a>
+		
+		<section id = "aboutMe">
+			<div id = "aboutMePicture">
+				<img width = "300" src = "snow_pic.jpg" alt = "Picture of me at A&M"/>
+			</div>
+			<div id = "aboutMeText">
+				<h1> About Me </h1><br/>
+				<p>I am a sophmore at Texas A&M majoring in Computer Science with a minor in Cybersecurity. I am a sophmore at Texas A&M majoring in Computer Science with a minor in Cybersecurity. I am a sophmore at Texas A&M majoring in Computer Science with a minor in Cybersecurity. I am a sophmore at Texas A&M majoring in Computer Science with a minor in Cybersecurity. I am a sophmore at Texas A&M majoring in Computer Science with a minor in Cybersecurity. I am a sophmore at Texas A&M majoring in Computer Science with a minor in Cybersecurity. I am a sophmore at Texas A&M majoring in Computer Science with a minor in Cybersecurity. THIS IS THE END</p>
+			</div>
+		</section>
+		
+		<a class="jumpPoint" id="jumpToEducation"></a>
+		
+		<section class = "education">
+			<h1> Education </h1>
+			<img id = "AMlogo" width = "200" src = "TAMUlogo.png" alt = "A&M Logo"/>
+			<div id = "educationText">
+				<h2 id = "educationHeader"> Texas A&M University, 2020&#8288-<span>&#8288</span>2024 </h2>
+				<p id = "educationText"> Computer Science, B.S. <br/> Minor in Cybersecurity <br/> GPA: 3.92 <br/> Corps of Cadets </p>
+			</div>
+		</section>
+		
+		<a class="jumpPoint" id="jumpToProjects"></a>
+		
+		<section id = "projects">
+			<h1> Projects </h1>
+			<div class = "card" id = "HTMLProject">
+				<img class = "cardLogo" id = "HTMLLogo" width = "200" src = "TAMUlogo.png" alt = "HTML Logo"/>
+				<div class = "cardText" id = "HTMLText">
+					<h2 id = "HTMLHeader"> My Personal Website</h2>
+					<p id = "HTMLText"> I built this website from scratch, it taught me how to use CSS Flexbox and Grid, as well as HTML</p>
+				</div>
+			</div>
+			<div class = "card" id = "OProject">
+				<img class = "cardLogo" id = "OLogo" width = "200" src = "TAMUlogo.png" alt = "HTML Logo"/>
+				<div class = "cardText" id = "OText">
+					<h2 id = "OHeader"> My Personal Website</h2>
+					<p id = "OText"> I built this website from scratch, it taught me how to use CSS Flexbox and Grid, as well as HTML</p>
+				</div>
+			</div>
+		</section>
+	
+	</main>
+	
+</body>
+</html>
