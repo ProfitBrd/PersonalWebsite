@@ -21,17 +21,23 @@ body {
 }
 
 /*Offsets navigation bar when jumping to a point*/
-.jumpPoint {
+.jumpPoint::before {
+	content: "";
+    display: block;
+    height: 50px;
+    margin: -50px 0 0;
+	/*
     display: block;
     position: relative;
     top: -50px;
     visibility: hidden;
+	*/
 }
-.jumpPoint #jumpToEducation{
-    top: -25px;
-}
-.jumpPoint #jumpToProjects{
-    top: -25px;
+
+
+/*SMOOTH SCROLLING*/
+html{
+	scroll-behavior: smooth;
 }
 
 
@@ -179,7 +185,7 @@ header{
 	X 	X
 */
 /* EDUCATION */
-.education{
+#education{
 	display:grid;
 	grid-template-rows: 70px minmax(150px, max-content);
 	grid-template-columns: 300px 1fr;
@@ -193,7 +199,7 @@ header{
 	color: black;
 	
 }
-.education h1{
+#education h1{
 	grid-row: 1/span 1;
 	grid-column: 1/span 1;
 	font-size: 40px;
@@ -257,6 +263,7 @@ header{
 }
 .card .cardLogo{
 	margin: auto;
+	object-fit: cover;
 }
 .card .cardText{
 	text-align:start;	
@@ -271,7 +278,49 @@ header{
 
 
 
+.sectionTitle{
+	display:block;
+	margin:0px;
+	background-color: var(--offWhite);
+	padding-top:5%;
+	padding-right: 4px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	color: black;
+}
+.sectionTitle h1{
+	font-size: 40px;
+	padding-left: 45px;
+}
 
+.skillDiv h1{
+	display: block;
+	padding: 50px 40px 20px 0px; /*top right bottom left*/
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	color: black;
+	font-size: 40px;
+}
+
+.skillGrid{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.skillItem{
+	flex: 1 0 21%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 25px;
+}
+.skillItem h1{
+	align-self: center;
+	padding-right:40px;
+}
+	
 
 
 
