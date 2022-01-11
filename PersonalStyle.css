@@ -5,9 +5,11 @@
 	padding: 0;
 }
 :root{
-	--mainColor: #1C2833;
+	--mainColor: #35373B;/*#1C2833;*/
 	--secondaryColor: #464c99;
 	--offWhite: #edf0f1;
+	--introColor: #35373B;
+	--introLogoColor: #edf0f1;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
@@ -42,7 +44,7 @@ html{
 
 
 /*NAVIGATION BAR*/
-header li, header a, #nameOnHeader{
+#navitems li, #navitems a, #nameOnHeader{
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	font-size: 16px;
@@ -54,7 +56,7 @@ header{
 	position:fixed;
 	width: 100%;
 	display : flex;
-	background-color: var(--secondaryColor);
+	background-color: var(--mainColor);
 	justify-content: flex-end;
 	align-items: center;
 	padding-right:0px;
@@ -111,7 +113,7 @@ header{
 	font-weight: 500;
 	text-align:center;
 	color: white;
-	text-shadow: 1px 0px #30A412, -1px 0px #30A412, 0px 1px #30A412, 0px -1px #30A412;/*outline*/
+	text-shadow: 1px 0px 3px var(--introColor), -1px 0px 3px var(--introColor), 0px 1px 3px var(--introColor), 0px -1px 3px var(--introColor);/*outline*/
 }
 #introductionWords h1{
 	font-size: 50px;
@@ -129,13 +131,13 @@ header{
 #icons .fab{
 	margin-right: 30px;
 	margin-left: 30px;
-	text-shadow: 1px 0px white, -1px 0px white, 0px 1px white, 0px -1px white;/*outline*/
+	text-shadow: 1px 0px var(--introLogoColor), -1px 0px var(--introLogoColor), 0px 1px var(--introLogoColor), 0px -1px var(--introLogoColor);/*outline*/
 }
 #icons .fas{
 	margin-right: 30px;
 	margin-left: 30px;
 	padding:4px;
-	text-shadow: 1px 0px white, -1px 0px white, 0px 1px white, 0px -1px white;/*outline*/
+	text-shadow: 1px 0px var(--introLogoColor), -1px 0px var(--introLogoColor), 0px 1px var(--introLogoColor), 0px -1px var(--introLogoColor);/*outline*/
 }
 
 /*ABOUT ME */
@@ -276,6 +278,10 @@ header{
 .card .cardText p{
 	font-size: 22px;
 }
+#HTMLLogo{ /*trim the bottom right edge of html logo*/
+	border-radius: 0 0 7px 0; /*topleft topright bottomright bottomleft*/
+}
+	
 
 
 
@@ -283,7 +289,7 @@ header{
 	display:block;
 	margin:0px;
 	background-color: var(--offWhite);
-	padding-top:5%;
+	padding-top: 50px;
 	padding-right: 4px;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
@@ -316,6 +322,8 @@ header{
 	flex-direction: column;
 	align-items: center;
 	font-size: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .skillItem h1{
 	align-self: center;
@@ -352,12 +360,28 @@ header{
 }
 #contactList{
 	display:block;
-	padding: 2% 0px 20px 45px; /*top right bottom left*/
+	padding: 2% 0px 40px 45px; /*top right bottom left*/
 	font-size: 20px;
 	list-style: none;
 	line-height: 50px;
 }
-
+#credits{
+	display:block;
+	background-color: var(--mainColor);
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	color: grey;
+	font-size: 10px;
+	align-content: center;
+}
+#credits p,#credits a{
+	width: 20%;
+	margin: auto;
+	text-align: center;
+}
+#credits a{
+	color: blue;
+}
 
 
 

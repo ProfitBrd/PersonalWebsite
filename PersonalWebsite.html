@@ -11,15 +11,15 @@
 <body>
 	
 	<header>
-		<p id = "nameOnHeader">Alex De Young</p>
+		<a href = "#" id = "nameOnHeader"> Alex De Young </a>
 		<nav>
 			<ul id = "navitems">
 				<li><a href = "#jumpToAboutMe"> About Me </a></li> <!-- FIXME -->
 				<li><a href = "#jumpToEducation" > Education </a></li>
 				<li><a href = "#jumpToProjects" > Projects </a></li>
 				<li><a href = "#jumpToSkills" > Skills </a></li>
-				<li><a href = "#" > Misc </a></li>
-				<li><a href = "#" > Contact </a></li>
+				<li><a href = "#jumpToMisc" > Misc </a></li>
+				<li><a href = "#jumpToContact" > Contact </a></li>
 			</ul>
 		</nav>
 	</header>
@@ -65,17 +65,10 @@
 		<section id = "projects">
 			<h1> Projects </h1>
 			<div class = "card" id = "HTMLProject">
-				<img class = "cardLogo" id = "HTMLLogo" width = "200" src = "HTMLpicture.png" alt = "HTML Logo"/>
+				<img class = "cardLogo" id = "HTMLLogo" width = "200" src = "html-site-logo.png" alt = "HTML Logo"/>
 				<div class = "cardText" id = "HTMLText">
 					<h2 id = "HTMLHeader"> My Personal Website</h2>
 					<p id = "HTMLText"> I built this website from scratch, it taught me how to use CSS Flexbox and Grid, as well as HTML</p>
-				</div>
-			</div>
-			<div class = "card" id = "OProject">
-				<img class = "cardLogo" id = "OLogo" width = "200" src = "TAMUlogo.png" alt = "HTML Logo"/>
-				<div class = "cardText" id = "OText">
-					<h2 id = "OHeader"> My Personal Website</h2>
-					<p id = "OText"> I built this website from scratch, it taught me how to use CSS Flexbox and Grid, as well as HTML</p>
 				</div>
 			</div>
 		</section>
@@ -85,46 +78,34 @@
 		<section class = "sectionTitle" id = "skills">
 			<h1> Skills </h1>
 			<div class = "skillDiv" id = "proficient">
-				<h1> Proficient In </h1>
+				<h1> Proficient In: </h1>
 				<div class = "skillGrid" id = "group1">
-					<div class = "skillItem" id = "html">
-						<img width = "200" src = "HTML-5.png" alt = "HTML Logo"/>
-						<h2>HTML</h2>
-					</div>
-					<div class = "skillItem" id = "html2">
-						<img width = "200" src = "HTML-5.png" alt = "HTML Logo"/>
+					<div class = "skillItem" id = "cplusplus">
+						<img width = "100" src = "c-logo.png" alt = "C++ Logo"/>
 						<h2>C++</h2>
 					</div>
-					<div class = "skillItem" id = "html3">
-						<img width = "200" src = "HTML-5.png" alt = "HTML Logo"/>
+					<div class = "skillItem" id = "python">
+						<img width = "110" src = "python-logo.png" alt = "Python Logo"/>
 						<h2>Python</h2>
 					</div>
-					<div class = "skillItem" id = "html3">
-						<img width = "200" src = "HTML-5.png" alt = "HTML Logo"/>
+					<div class = "skillItem" id = "html">
+						<img width = "110" src = "HTML-5.png" alt = "HTML Logo"/>
 						<h2>HTML</h2>
 					</div>
-					<div class = "skillItem" id = "html4">
-						<img width = "200" src = "HTML-5.png" alt = "HTML Logo"/>
-						<h2>HTML</h2>
+					<div class = "skillItem" id = "css">
+						<img width = "110" src = "css-logo.png" alt = "CSS Logo"/>
+						<h2>CSS</h2>
 					</div>
 				</div>
 			</div>
 			
 			
 			<div class = "skillDiv" id = "competent">
-				<h1> Competent With </h1>
+				<h1> Competent With: </h1>
 				<div class = "skillGrid" id = "competentGroup">
-					<div class = "skillItem" id = "html">
-						<img width = "200" src = "HTML-5.png" alt = "HTML Logo"/>
-						<h2>HTML</h2>
-					</div>
-					<div class = "skillItem" id = "html2">
-						<img width = "200" src = "HTML-5.png" alt = "HTML Logo"/>
-						<h2>C++</h2>
-					</div>
-					<div class = "skillItem" id = "html2">
-						<img width = "200" src = "HTML-5.png" alt = "HTML Logo"/>
-						<h2>C++</h2>
+					<div class = "skillItem" id = "java">
+						<img width = "110" src = "java-coffee-cup-logo.png" alt = "Java Logo"/>
+						<h2>Java</h2>
 					</div>
 				</div>
 			</div>
@@ -133,20 +114,20 @@
 			<div class = "skillDiv" id = "knowledge">
 				<h1> Have Some Knowledge of: </h1>
 				<div class = "skillGrid" id = "competentGroup">
-					<div class = "skillItem" id = "html">
-						<img width = "200" src = "HTML-5.png" alt = "HTML Logo"/>
-						<h2>HTML</h2>
+					<div class = "skillItem" id = "javascript">
+						<img width = "110" src = "Javascript-logo.png" alt = "JavaScript Logo"/>
+						<h2>Javascript</h2>
 					</div>
-					<div class = "skillItem" id = "html2">
-						<img width = "200" src = "HTML-5.png" alt = "HTML Logo"/>
-						<h2>C++</h2>
+					<div class = "skillItem" id = "linuxbash">
+						<img width = "110" src = "console-logo.png" alt = "Terminal Logo"/>
+						<h2>Linux/Unix Bash</h2>
 					</div>
 				</div>
 			</div>
 		</section>
 		
 		<p class = paddingBetweenSections></p>
-		
+		<a class= "jumpPoint" id="jumpToMisc"></a>
 		
 		<section class = "sectionTitle" id = "misc">
 			<h1> Miscellaneous </h1>
@@ -155,6 +136,7 @@
 			</div>
 		</section>
 			
+		<a class= "jumpPoint" id="jumpToContact"></a>
 		
 		</footer>
 			<div class = "sectionTitle" id = "footerContact">
@@ -165,6 +147,9 @@
 					<li>LinkedIn: https://www.linkedin.com/in/alexander-de-young-22b8221b3/</li>
 					<li>Github: https://github.com/ProfitBrd</li>
 				</ul>
+			</div>
+			<div id = "credits">
+				<p> Icons made by <a href = https://fontawesome.com/v6.0/icons>fontawesome</a><br/> Background taken from <a href = "https://www.wallpaperflare.com">wallpaper flare</a></p>
 			</div>
 		</footer>
 	</main>
