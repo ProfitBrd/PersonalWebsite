@@ -87,6 +87,7 @@ header{
 }
 
 
+
 /*TITLE SCREEN*/
 .introduction{
 	display:block;
@@ -165,6 +166,12 @@ header{
 #aboutMeText{
 	grid-row: 1 / span 1;
 	grid-column: 2 / span 1;
+}
+#aboutMeText h1{
+	font-size: 35px;
+}
+#aboutMeText p{
+	font-size: 20px;
 }
 @media(max-width:1100px){ /*below certain width, make transform grid elements into a 2x1 grid*/
 	#aboutMe{
