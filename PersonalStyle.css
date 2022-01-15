@@ -133,6 +133,7 @@ header{
 	color: var(--introLogoColor);
 }
 #icons .fab{
+	color: var(--introLogoColor); /*Chrome won't show correct color without it*/
 	margin-right: 30px;
 	margin-left: 30px;
 	text-shadow: 1px 0px var(--introLogoOutlineColor), -1px 0px var(--introLogoOutlineColor), 0px 1px var(--introLogoOutlineColor), 0px -1px var(--introLogoOutlineColor);/*outline*/
