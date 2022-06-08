@@ -389,7 +389,9 @@ header{
 #presentcolor{
 	color: #12D9D0;
 }
-
+#tempText{
+	color: var(--secondaryColor);
+}
 /*#myYoutubeVideo{
 	display: block;
 	margin: auto;
