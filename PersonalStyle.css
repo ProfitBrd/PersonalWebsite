@@ -434,6 +434,17 @@ header{
 	color: blue;
 }
 
+.clickToCopyButton {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #007AFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 
 
