@@ -41,6 +41,7 @@
 		
 		<a class="jumpPoint" id="jumpToAboutMe"></a>
 		
+		<!-- ABOUT ME -->
 		<section id = "aboutMe">
 			<div id = "aboutMePicture">
 				<img width = "225" src = "Pictures/PFP2.jpg" alt = "Picture of me at A&M Football Game against Alabama"/>
@@ -53,6 +54,7 @@
 		
 		<a class="jumpPoint" id="jumpToEducation"></a>
 		
+		<!-- EDUCATION -->
 		<section id = "education">
 			<h1> Education </h1>
 			<img id = "AMlogo" width = "200" src = "Pictures/TAMUlogo.png" alt = "A&M Logo"/>
@@ -64,26 +66,41 @@
 		
 		<a class="jumpPoint" id="jumpToProjects"></a>
 		
+		<!-- PROJECTS -->
 		<section id = "projects">
 			<h1> Projects </h1>
 			<div class = "card" id = "HTMLProject">
 				<img class = "cardLogo" id = "HTMLLogo" width = "200" src = "Pictures/html-site-logo.png" alt = "HTML Logo"/>
-				<div class = "cardText" id = "HTMLText">
-					<h2 id = "HTMLHeader"> My Personal Website</h2>
+				<h2 class = "cardTitle" id = "HTMLHeader"> My Personal Website</h2>
+				<ul class = "cardLanguageList" id = "HTMLList">
+						<li style = "color: red;"><span>HTML</span></li>
+						<li style = "color: orange;"><span>CSS</span></li>
+						<li style = "color: #FBDD00;"><span>JavaScript</span></li>
+				</ul>
+				<div class = "cardText" id = "HTMLText">	
 					<p id = "HTMLText"> I built this website from scratch.</p>
+				</div>
+				<div class = "cardLink" id = "HTMLGitHubLink">	
+					<a href = "https://github.com/ProfitBrd/PersonalWebsite" target = "_blank"><i class="fa fa-link"></i>Github Files</a>
 				</div>
 			</div>
 			<div class = "card" id = "BeeBotProject">
 				<img class = "cardLogo" id = "BeeBotLogo" width = "200" src = "Pictures/Beebot.png" alt = "BeeBot Logo"/>
-				<div class = "cardText" id = "BeeBotText">
-					<h2 id = "BeeBotHeader"> BeeBot Project</h2>
+				<h2 class = "cardTitle" id = "BeeBotHeader"> BeeBot Project</h2>
+				<ul class = "cardLanguageList" id = "BeeBotList">
+						<li style = "color: green;"><span>Python</span></li>
+				</ul>
+				<div class = "cardText" id = "BeeBotText">	
 					<p id = "BeeBotText"> Worked with a team to build a program that interacts with users on discord and creates a profile with all their classes. This can be used to connect with others taking the same classes and form study groups or recieve help.</p>
+				</div>
+				<div class = "cardLink" id = "BeeBotGitHubLink">	
+					<a href = "https://github.com/abbiecouvillon/HowdyHack2021Bot" target = "_blank"><i class="fa fa-link"></i>Github Files</a>
 				</div>
 			</div>
 		</section>
-		
 		<a class="jumpPoint" id="jumpToSkills"></a>
 		
+		<!-- SKILLS -->
 		<section class = "sectionTitle" id = "skills">
 			<h1> Skills </h1>
 			<div class = "skillDiv" id = "proficient">
@@ -145,8 +162,10 @@
 		</section>
 		
 		<p class = paddingBetweenSections></p>
+		
 		<a class= "jumpPoint" id="jumpToMisc"></a>
 		
+		<!-- MISCELLANEOUS -->
 		<section class = "sectionTitle" id = "misc">
 			<h1> Miscellaneous </h1>
 			<script src="Javascript/quoteofthedayscript.js"></script>
@@ -155,12 +174,13 @@
 			
 		<a class= "jumpPoint" id="jumpToContact"></a>
 		
+		<!-- CONTACT -->
 		</footer>
 			<div class = "sectionTitle" id = "footerContact">
 				<h1> Contact </h1>
 				<ul id = "contactList">
 					<li>Phone: <button class = clickToCopyButton id = "clickToCopyPhone">(210)473-1052</button></li>
-					<li style = "display:none" id = "clickToCopyActualPhone">2104731052</li>
+					<li style = "display:none;" id = "clickToCopyActualPhone">2104731052</li>
 					<li>Email: <button class = clickToCopyButton id = "clickToCopyEmail">alex.m.deyoung@gmail.com</button></li>
 					<li>LinkedIn: <a href = https://www.linkedin.com/in/alexander-de-young-22b8221b3 target = "_blank"> https://www.linkedin.com/in/alexander-de-young </a> </li>
 					<li>Github: <a href = https://github.com/ProfitBrd target = "_blank">https://github.com/ProfitBrd</a></li>
