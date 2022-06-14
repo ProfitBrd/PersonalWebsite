@@ -259,7 +259,9 @@ header{
 
 
 /* Grid:
-	Block
+	X X
+	X X
+	X X
 	X X
 */
 /* PROJECTS */
@@ -280,11 +282,11 @@ header{
 
 .card{
 	display: grid;
-	grid-template-rows: minmax(150px, max-content);
+	grid-template-rows:  45px 40px minmax(50px, max-content) minmax(25px, max-content);
 	grid-template-columns: 300px 1fr;
 	grid-gap: 0px 3px;
 	background-color: var(--offWhite);
-	padding-top:1%;
+	padding-top:2%;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	color: black;
@@ -293,17 +295,60 @@ header{
 	margin: auto;
 	object-fit: cover;
 	box-shadow: 5px 5px 5px grey;
+	grid-column: 1;
+	grid-row: 1/5; /*spans all 3 rows, top to bottom*/
 }
-.card .cardText{
+
+.card .cardTitle{
 	text-align:start;	
-}
-.card .cardText h2{
+	white-space: nowrap; /*Can't use minmax for top row b/c logo makes it max, which looks bad, and if it wraps dips into languages, so don't wrap*/
 	padding-bottom: 20px;
 	font-size: 30px;
+	grid-column: 2;
+	grid-row: 1;
 }
-.card .cardText p{
+.card .cardLanguageList{
+	display: flex;
+	padding-left: 23px;
+	grid-column: 2;
+	grid-row: 2;
+}
+.card .cardLanguageList li{
+	display: list-item;
+	padding-right: 50px;
+	font-size: 25px;
+}
+.card .cardLanguageList li span{
+	color: black;
+	font-size: 19px;
+}
+.card .cardText{
+	text-align:start;
 	font-size: 22px;
+	grid-column: 2;
+	grid-row: 3;
 }
+.card .cardLink{
+	font-size: 22px;
+	grid-column: 2;
+	grid-row: 4;
+}
+/*
+2 Solution for ul bullets disappearing:
+
+1) Force a bullet point to be inserted before
+ul li:before {
+  content: "• ";
+}
+ 
+2) Create a span w/in list item and make that into displaayLlist item
+li span {
+    display: list-item;
+    padding: 10px 20px;
+}
+
+3) I just made the outer list into flex display and then each list item into its own list-item
+*/
 #HTMLLogo{ /*trim the bottom right edge of html logo*/
 	border-radius: 0 0 7px 0; /*topleft topright bottomright bottomleft*/
 }
