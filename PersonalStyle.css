@@ -282,7 +282,7 @@ header{
 
 .card{
 	display: grid;
-	grid-template-rows:  45px 40px minmax(50px, max-content) minmax(25px, max-content);
+	grid-template-rows:  45px 46px minmax(50px, max-content) minmax(25px, max-content);
 	grid-template-columns: 300px 1fr;
 	grid-gap: 0px 3px;
 	background-color: var(--offWhite);
