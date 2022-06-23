@@ -14,12 +14,20 @@ function copyText(htmlElement){
 	inputElement.parentNode.removeChild(inputElement); //removes copied text once done
 }
 
-document.querySelector('#clickToCopyEmail').onclick = //Copies Email Number
+document.querySelector('#clickToCopyEmail').onclick = //Copies Email
 function (){
 	copyText(document.querySelector('#clickToCopyEmail'));
+	alert("Email Copied");
+}
+
+document.querySelector('#clickToCopyEmailIcon').onclick = //Copies Email from Icon
+function (){
+	copyText(document.querySelector('#clickToCopyEmail'));
+	alert("Email Copied");
 }
 
 document.querySelector('#clickToCopyPhone').onclick = //Copies Phone Number
 function (){
 	copyText(document.querySelector('#clickToCopyActualPhone'));
+	alert("Phone Number Copied");
 }
