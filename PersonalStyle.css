@@ -153,7 +153,7 @@ header{
 	text-shadow: 1px 0px var(--introLogoOutlineColor), -1px 0px var(--introLogoOutlineColor), 0px 1px var(--introLogoOutlineColor), 0px -1px var(--introLogoOutlineColor);/*outline*/
 	cursor: pointer;
 }
-#icons #clickToCopyEmailIcon { /*Button surrounding the email icon*/
+#icons #clickToCopyEmailButton { /*Button surrounding the email button*/
   background-color: transparent;
   border: none;
 }

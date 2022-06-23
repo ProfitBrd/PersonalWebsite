@@ -20,7 +20,7 @@ function (){
 	alert("Email Copied");
 }
 
-document.querySelector('#clickToCopyEmailIcon').onclick = //Copies Email from Icon
+document.querySelector('#clickToCopyEmailButton').onclick = //Copies Email from Icon
 function (){
 	copyText(document.querySelector('#clickToCopyEmail'));
 	alert("Email Copied");
