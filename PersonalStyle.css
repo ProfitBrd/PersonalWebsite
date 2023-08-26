@@ -362,7 +362,13 @@ li span {
 #HTMLLogo{ /*trim the bottom right edge of html logo*/
 	border-radius: 0 0 7px 0; /*topleft topright bottomright bottomleft*/
 }
-	
+#BeeBotLogo{ /*trim the beebot logo*/
+	border-radius: 7px 7px 7px 7px; /*topleft topright bottomright bottomleft*/
+}
+
+#PlanBeeLogo{ /*trim the Plan Bee logo*/
+	border-radius: 7px 7px 7px 7px; /*topleft topright bottomright bottomleft*/
+}
 
 
 /*SKILLS*/
