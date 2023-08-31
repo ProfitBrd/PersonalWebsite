@@ -219,11 +219,24 @@ header{
 
 /* Grid:
 	X	X
-	X	X
 	X 	X
 */
 /* EDUCATION */
-#education{
+.sectionStyle1{
+	display:block;
+	margin:0px;
+	background-color: var(--offWhite);
+	padding-top:3%;
+	padding-right: 4px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	color: black;
+}
+.sectionStyle1 h1{
+	font-size: 40px;
+	padding-left: 45px;
+}
+.divStyle1{
 	display:grid;
 	grid-template-rows: 70px minmax(150px, max-content);
 	grid-template-columns: 300px 1fr;
@@ -237,35 +250,73 @@ header{
 	color: black;
 	
 }
-#education h1{
-	grid-row: 1/span 1;
-	grid-column: 1/span 1;
-	font-size: 40px;
-}
-#AMlogo{
+.divStyle1Picture{
 	grid-row: 2 span 2;
 	grid-column: 1/span 1;
 	margin: auto;
 	box-shadow: 5px 5px 5px grey;
 }
-#educationText{
+.divStyle1Content{
 	text-align: start;
 }
-#educationHeader{
+.divStyle1Header{
+	font-size: 33px;
 	align-content: left;
 	grid-row: 2 span 1;
 	grid-column: 2/span 1;
 	padding-bottom: 20px;
 }
-#educationText{
+.divStyle1Text{
 	font-size: 22px;
 	grid-row: 2/span 1;
 	grid-column: 2/span 1;
 }
 	
-
-
-
+/* Grid:
+	X	X
+	X	X
+	X 	X
+*/
+/* EXPERIENCE*/
+.divStyle2{
+	display:grid;
+	grid-template-rows: 70px 50px minmax(150px, max-content);
+	grid-template-columns: 300px 1fr;
+	grid-gap: 0px 3px;
+	background-color: var(--offWhite);
+	padding-top:1%;
+	padding-right: 4px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	text-align:center;
+	color: black;
+	text-align: start;
+}
+.divStyle2Picture{
+	grid-row: 1/span 2;
+	grid-column: 1/span 1;
+	margin: auto;
+	box-shadow: 5px 5px 5px grey;
+}
+.divStyle2Header{
+	font-size: 33px;
+	align-content: left;
+	grid-row: 1/span 1;
+	grid-column: 2/span 1;
+	padding-bottom: 20px;
+}
+.divStyle2SubHeader h3{
+	font-size: 33px;
+	align-content: left;
+	grid-row: 3/span 1;
+	grid-column: 2/span 1;
+	padding-bottom: 10px;
+}
+.divStyle2Text{
+	font-size: 22px;
+	grid-row: 3/span 1;
+	grid-column: 2/span 1;
+}
 
 
 /* Grid:
