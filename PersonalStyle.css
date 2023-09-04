@@ -256,6 +256,9 @@ header{
 	margin: auto;
 	box-shadow: 5px 5px 5px grey;
 }
+#ACElogo{ /*trim the Plan Bee logo*/
+	border-radius: 100px 100px 100px 100px; /*topleft topright bottomright bottomleft*/
+}
 .divStyle1Content{
 	text-align: start;
 }
